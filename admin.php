@@ -237,7 +237,7 @@ if(!empty($_POST))
         while($tableau_experiences = $resultat->fetch(PDO::FETCH_OBJ)) {
         ?>
             <h3 class="mb-0"><?php echo $tableau_experiences->titre?></h3>
-            <a type="submit" href="ebd20f5dd2bcff2044e9e37c97a6c70e.php?idexp=<?php echo $tableau_experiences->id_experience?>"class="btn btn-light">Supprimer l'expérience</a>
+            <a type="submit" href="admin.php?idexp=<?php echo $tableau_experiences->id_experience?>"class="btn btn-light">Supprimer l'expérience</a>
         <?php
         }
         ?>
@@ -283,7 +283,7 @@ if(!empty($_POST))
         while($tableau_formations = $resultat->fetch(PDO::FETCH_OBJ)) {
         ?>
             <h3 class="mb-0"><?php echo $tableau_formations->institution?></h3>
-            <a type="submit" href="ebd20f5dd2bcff2044e9e37c97a6c70e.php?idforma=<?php echo $tableau_formations->id_education?>"class="btn btn-light">Supprimer la formation</a>
+            <a type="submit" href="admin.php?idforma=<?php echo $tableau_formations->id_education?>"class="btn btn-light">Supprimer la formation</a>
         <?php
         }
         ?>
